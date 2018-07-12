@@ -3,14 +3,14 @@
 #### 项目介绍
 
 1. 接SpringCloudStudy01继续创建一个服务消费者，进行负载均衡消费
-2. 主要教程可以参考方志朋的史上最简单的SpringCloud教程|第二篇:[https://blog.csdn.net/forezp/article/details/69788938](https://blog.csdn.net/forezp/article/details/69788938)
+2. 主要教程可以参考方志朋的史上最简单的SpringCloud教程 | 第二篇:[https://blog.csdn.net/forezp/article/details/69788938](https://blog.csdn.net/forezp/article/details/69788938)
 3. 如何在IDEA启动多个Spring Boot工程实例:[https://blog.csdn.net/forezp/article/details/76408139](https://blog.csdn.net/forezp/article/details/76408139)
 4. 感谢CD826的SpringCloud入门教程(二):[https://www.jianshu.com/p/df9393755a05](https://www.jianshu.com/p/df9393755a05)
 5. RestTemplate使用指南:[https://www.jianshu.com/p/462790156554](https://www.jianshu.com/p/462790156554)
 6. 感谢从删库到跑路的Eureka的自我保护模式:[https://blog.csdn.net/cvntopuyef/article/details/78477681](https://blog.csdn.net/cvntopuyef/article/details/78477681)
 7. Eureka客户端服务端配置:[https://blog.csdn.net/cvntopuyef/article/details/78477724](https://blog.csdn.net/cvntopuyef/article/details/78477724)
 
-###### 剔除过期等不健康实例配置(生产环境不建议使用)
+##### 剔除过期等不健康实例配置(生产环境不建议使用)
 
 Server端
 ````

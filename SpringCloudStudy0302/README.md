@@ -7,16 +7,16 @@
 3. 感谢TransientBa的SpringBoot引用Eureka导致返回结果由json变为xml解决方案:[https://blog.csdn.net/zyb2017/article/details/80265070](https://blog.csdn.net/zyb2017/article/details/80265070)
 4. 感谢每天多帅一点点的Feign PathVariable annotation was empty on param 0:[https://www.cnblogs.com/huhuixin/p/7797850.html](https://www.cnblogs.com/huhuixin/p/7797850.html)
 
-###### Eureka默认返回的是Xml，修改为Json
+##### Eureka默认返回的是Xml，修改为Json
 
 在方法上加上这个声明就会返回Json，在类上加就整个类都是返回Json
-````
+````Java
 @RequestMapping(produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
 ````
 
-###### 在Feign接口中的Controller方法@PathVariable前要加上Value，不会自动对应，例如@PathVariable("code")
+##### 在Feign接口中的Controller方法@PathVariable前要加上Value，不会自动对应，例如@PathVariable("code")
 
-````
+````Java
 package com.wang.feignclient;
 
 import org.springframework.cloud.openfeign.FeignClient;
