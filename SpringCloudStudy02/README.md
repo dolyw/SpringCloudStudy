@@ -13,20 +13,20 @@
 ##### 剔除过期等不健康实例配置(生产环境不建议使用)
 
 Server端
-````
-#1.关闭注册中心自我保护机制
+````yml
+# 1.关闭注册中心自我保护机制
 eureka.server.enable-self-preservation：false
-#2.注册中心清理间隔（单位毫秒，默认60*1000）
+# 2.注册中心清理间隔（单位毫秒，默认60*1000）
 eureka.server.eviction-interval-timer-in-ms：10000
 ````
 
 Client端
-````
-#1.开启健康检查（需要spring-boot-starter-actuator依赖）
+````yml
+# 1.开启健康检查（需要spring-boot-starter-actuator依赖）
 eureka.client.healthcheck.enabled:true
-#2.租期更新时间间隔（默认30秒）
+# 2.租期更新时间间隔（默认30秒）
 eureka.instance.lease-renewal-interval-in-seconds=10
-#3.租期到期时间（默认90秒）
+# 3.租期到期时间（默认90秒）
 eureka.instance.lease-expiration-duration-in-seconds=15
 ````
 
