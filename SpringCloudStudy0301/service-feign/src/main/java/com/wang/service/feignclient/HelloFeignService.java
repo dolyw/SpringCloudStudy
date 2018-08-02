@@ -11,6 +11,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
  */
 @FeignClient("service-hello")
 public interface HelloFeignService {
+
+    /**
+     * TODO：hello
+     * @param
+     * @return java.lang.String
+     * @author Wang926454
+     * @date 2018/7/31 17:10
+     */
     @RequestMapping(value = "/hello", method = RequestMethod.GET)
     String hello();
 }

@@ -15,12 +15,18 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class HelloController {
-    // 日志打印
+    /**
+     * 日志打印
+     */
     protected Logger logger = LoggerFactory.getLogger(HelloController.class);
 
     @Autowired
     private EurekaInstanceConfig eurekaInstanceConfig;
-    @Value("${server.port}") // 获取配置中的端口号
+
+    /**
+     * 获取配置中的端口号
+     */
+    @Value("${server.port}")
     private int serverPort = 0;
 
     @GetMapping("/hello")

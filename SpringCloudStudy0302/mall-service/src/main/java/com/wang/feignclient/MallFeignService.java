@@ -18,17 +18,33 @@ import java.util.Map;
 @FeignClient("product-service")
 @RequestMapping("/product")
 public interface MallFeignService {
+    /**
+     * TODO：list
+     * @param 
+     * @return java.util.List<java.lang.Object>
+     * @author Wang926454
+     * @date 2018/7/31 17:20
+     */
     @RequestMapping(method = RequestMethod.GET)
     public List<Object> list();
 
     /**
-     * @Desc 返回Map型Json
-     * @Author wliduo
-     * @Date 2018/7/12 15:23
+     * TODO：返回Map型Json
+     * @param 
+     * @return java.util.Map<java.lang.String,java.lang.Object>
+     * @author Wang926454
+     * @date 2018/7/31 17:21
      */
     @RequestMapping(value = "/map", method = RequestMethod.GET)
     public Map<String,Object> list2();
 
+    /**
+     * TODO：selectByCode
+     * @param code
+     * @return java.lang.Object
+     * @author Wang926454
+     * @date 2018/7/31 17:21
+     */
     @RequestMapping(value = "/{code}", method = RequestMethod.GET)
     public Object selectByCode(@PathVariable("code") String code);
 }

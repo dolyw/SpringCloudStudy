@@ -10,6 +10,13 @@ import org.springframework.web.bind.annotation.GetMapping;
  */
 @FeignClient(value = "service-hello",fallback = HelloFeignServiceHystrixImpl.class)
 public interface HelloFeignService {
+    /**
+     * TODO：hello
+     * @param 
+     * @return java.lang.String
+     * @author Wang926454
+     * @date 2018/7/31 17:24
+     */
     @GetMapping("/hello")
     String hello();
 }

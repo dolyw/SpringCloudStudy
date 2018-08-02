@@ -5,8 +5,15 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
-@EnableEurekaClient // 表明自己是一个EurekaClient
-@EnableFeignClients // 开启Feign的功能
+/**
+ * TODO：
+ * @author Wang926454
+ * @date 2018/7/31 17:22
+ */
+// 表明自己是一个EurekaClient
+@EnableEurekaClient
+// 开启Feign的功能
+@EnableFeignClients
 @SpringBootApplication
 public class MallServiceApplication {
     public static void main(String[] args) {

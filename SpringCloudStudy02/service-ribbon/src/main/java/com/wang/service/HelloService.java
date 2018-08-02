@@ -15,6 +15,7 @@ public class HelloService {
     private RestTemplate restTemplate;
 
     public String hello(){
-        return restTemplate.getForObject("http://SERVICE-HELLO/hello", String.class); // 服务名必须大写
+        // 服务名必须大写
+        return restTemplate.getForObject("http://SERVICE-HELLO/hello", String.class);
     }
 }

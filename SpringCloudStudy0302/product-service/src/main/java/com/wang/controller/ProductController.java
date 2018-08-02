@@ -20,7 +20,9 @@ import java.util.Map;
 @RestController
 @RequestMapping(value = "/product")
 public class ProductController {
-    // 日志打印
+    /**
+     * 日志打印
+     */
     protected Logger logger = LoggerFactory.getLogger(ProductController.class);
 
     private final ProductService productService;
@@ -43,7 +45,7 @@ public class ProductController {
     @RequestMapping(value = "/map", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public Map<String,Object> list2() {
         List<Product> list = productService.list();
-        Map<String,Object> map = new HashMap<String,Object>();
+        Map<String,Object> map = new HashMap<String,Object>(16);
         map.put("list", list);
         return map;
     }

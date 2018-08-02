@@ -15,17 +15,33 @@ import java.util.Map;
  */
 @FeignClient(value = "product-service", fallback = MallFeignServiceHystrixImpl.class)
 public interface MallFeignService {
+    /**
+     * TODO：list
+     * @param 
+     * @return java.util.List<java.lang.Object>
+     * @author Wang926454
+     * @date 2018/7/31 17:28
+     */
     @GetMapping("/product")
     public List<Object> list();
 
     /**
-     * @Desc 返回Map型Json
-     * @Author wliduo
-     * @Date 2018/7/12 15:23
+     * TODO：返回Map型Json
+     * @param 
+     * @return java.util.Map<java.lang.String,java.lang.Object>
+     * @author Wang926454
+     * @date 2018/7/31 17:28
      */
     @GetMapping("/product/map")
     public Map<String,Object> list2();
 
+    /**
+     * TODO：selectByCode
+     * @param code
+     * @return java.lang.Object
+     * @author Wang926454
+     * @date 2018/7/31 17:28
+     */
     @GetMapping("/product/{code}")
     public Object selectByCode(@PathVariable("code") String code);
 }

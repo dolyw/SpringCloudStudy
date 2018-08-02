@@ -24,7 +24,7 @@ public class MallFeignServiceHystrixImpl implements MallFeignService {
 
     @Override
     public Map<String, Object> list2() {
-        Map<String, Object> error = new HashMap<String, Object>();
+        Map<String, Object> error = new HashMap<String, Object>(16);
         error.put("error", list());
         return error;
     }

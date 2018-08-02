@@ -6,9 +6,17 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
-@EnableEurekaClient // 表明自己是一个EurekaClient
-@EnableFeignClients // 开启Feign的功能
-@EnableHystrix // 启动Hystrix监控
+/**
+ * TODO：
+ * @author Wang926454
+ * @date 2018/7/31 17:29
+ */
+// 表明自己是一个EurekaClient
+@EnableEurekaClient
+// 开启Feign的功能
+@EnableFeignClients
+// 启动Hystrix监控
+@EnableHystrix
 @SpringBootApplication
 public class MallServiceApplication {
     public static void main(String[] args) {
