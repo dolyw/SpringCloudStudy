@@ -19,7 +19,7 @@ import java.util.Map;
 @RequestMapping("/product")
 public interface MallFeignService {
     /**
-     * TODO：list
+     * list
      * @param 
      * @return java.util.List<java.lang.Object>
      * @author Wang926454
@@ -29,7 +29,7 @@ public interface MallFeignService {
     public List<Object> list();
 
     /**
-     * TODO：返回Map型Json
+     * 返回Map型Json
      * @param 
      * @return java.util.Map<java.lang.String,java.lang.Object>
      * @author Wang926454
@@ -39,7 +39,7 @@ public interface MallFeignService {
     public Map<String,Object> list2();
 
     /**
-     * TODO：selectByCode
+     * selectByCode
      * @param code
      * @return java.lang.Object
      * @author Wang926454

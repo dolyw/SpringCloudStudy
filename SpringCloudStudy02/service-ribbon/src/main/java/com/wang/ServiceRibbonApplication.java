@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 /**
- * TODO：
+ *
  * @author Wang926454
  * @date 2018/7/31 17:04
  */

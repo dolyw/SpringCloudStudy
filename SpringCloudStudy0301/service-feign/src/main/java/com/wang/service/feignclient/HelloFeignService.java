@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 /**
- * @Desc FeignClient接口
+ * FeignClient接口
  * @Author wang926454
  * @Date 2018/7/11 16:01
  */
@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public interface HelloFeignService {
 
     /**
-     * TODO：hello
+     * hello
      * @param
      * @return java.lang.String
      * @author Wang926454
